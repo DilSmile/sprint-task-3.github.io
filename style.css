@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .converter-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  .converter-container h2 {
+    margin-bottom: 10px;
+  }
+  .converter-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .converter-row input {
+    width: 150px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .converter-row select {
+    padding: 5px;
+    font-size: 16px;
+  }
+  label {
+    font-weight: bold;
+  }

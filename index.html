@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Currency Converter</h1>
+  <div class="converter-container">
+    <h2>Если вы выбрали тенге то:</h2>
+    <div class="converter-row">
+      <label>Введите сумму:</label>
+      <input type="number" id="kzt-input" >
+      <select id="kzt-currency">
+        <option value="KZT">KZT</option>
+      </select>
+      <label>KZT (tenge):</label>
+      <input type="text" id="kzt-output" disabled>
+      <label>USD (dollar):</label>
+      <input type="text" id="usd-from-kzt" disabled>
+      <label>EUR (euro):</label>
+      <input type="text" id="eur-from-kzt" disabled>
+    </div>
+  </div>
+  <div class="converter-container">
+    <h2>Если вы выбрали доллар то:</h2>
+    <div class="converter-row">
+      <label>Введите сумму:</label>
+      <input type="number" id="usd-input" >
+      <select id="usd-currency">
+        <option value="USD">USD</option>
+      </select>
+      <label>KZT (tenge):</label>
+      <input type="text" id="kzt-from-usd" disabled>
+      <label>USD (dollar):</label>
+      <input type="text" id="usd-output" disabled>
+      <label>EUR (euro):</label>
+      <input type="text" id="eur-from-usd" disabled>
+    </div>
+  </div>
+  <div class="converter-container">
+    <h2>Если вы выбрали евро то:</h2>
+    <div class="converter-row">
+      <label>Введите сумму:</label>
+      <input type="number" id="eur-input">
+      <select id="eur-currency">
+        <option value="EUR">EUR</option>
+      </select>
+      <label>KZT (tenge):</label>
+      <input type="text" id="kzt-from-eur" disabled>
+      <label>USD (dollar):</label>
+      <input type="text" id="usd-from-eur" disabled>
+      <label>EUR (euro):</label>
+      <input type="text" id="eur-output" disabled>
+    </div>
+  </div>
+  <script src="converter.js"></script>
+</body>
+</html>
